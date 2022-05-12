@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ebf1ff">
+  <title>Home</title>
+  <link rel="icon" href="./assets/media/logo.svg"/>
+  <link href="./assets/css/aos.css" rel="stylesheet">
+  <script src="./assets/js/aos.js"></script>
+  <link href="./assets/css/global.css" rel="stylesheet">
+</head>
+<body style="color: var(--text);">
+  <header class="absolute w-full px-8 h-20 z-50">
+    <div class="flex items-center justify-between container max-w-6xl h-full mx-auto relative z-20">
+      <a href="./index.html" class="hover-none">
+        <img src="./assets/media/logo.svg" class="h-7">
+      </a>
+      <nav class="hidden md:block">
+        <ul class="inline-flex items-center space-x-10">
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="inline-flex items-center">
+              <span>Blog</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 ml-1 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+          <button class="text-roll px-5 h-10 rounded-sm font-semibold" style="background-color: var(--color-one);">
+            Signup
+          </button>
+        </ul>
+      </nav>
+
+      <button id="menu-btn" class="md:hidden" onclick="toggleMenu()">
+        <svg width="28" height="20" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="4.33333" fill="var(--color-two)"/>
+        <rect x="10" y="8.66667" width="10" height="4.33333" fill="var(--color-two)"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="h-screen w-screen fixed bg-white bg-opacity-90 backdrop-blur-sm px-8 py-32 text-right inset-0 z-10" style="visibility: hidden; transform: translateX(100%);">
+      <ul class="flex flex-col justify-end items-end space-y-10 text-2xl container mx-auto max-w-6xl">
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="inline-flex items-center">
+            <span>Blog</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 ml-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+        <button class="text-roll px-8 h-12 rounded-sm font-semibold" style="background-color: var(--color-one);">
+          Signup
+        </button>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="space-y-16">
+    <section class="flex items-center justify-center relative bg-no-repeat bg-cover"
+    style="background-image: url(/assets/media/hero-pattern.svg), linear-gradient(to top, #F6F9FF, #EBF1FF); height: 100vH; min-height: 40rem;" 
+    >
+      <div class="text-center container max-w-6xl mx-auto p-4">
+        <svg class="md:hidden w-64 my-12 mx-auto" viewBox="0 0 480 359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M120 120C120 53.7258 173.726 0 240 0V0V120H120V120Z" fill="var(--color-two)"/>
+        <path d="M120 120V120C186.274 120 240 173.726 240 240V240L120 240L120 120Z" fill="var(--color-one)"/>
+        <path d="M120 359V359C120 292.726 173.726 239 240 239V239V359H120Z" fill="var(--color-two)"/>
+        <path d="M240 0V0C306.274 0 360 53.7258 360 120V120H240V0Z" fill="var(--color-three)"/>
+        <path d="M0 359L0 239H120V239C120 305.274 66.2742 359 0 359V359Z" fill="var(--color-two)"/>
+        <path d="M0 240V240C0 173.726 53.7258 120 120 120V120L120 240H0Z" fill="var(--color-three)"/>
+        <path d="M360 120V120C360 186.274 306.274 240 240 240V240L240 120L360 120Z" fill="var(--color-one)"/>
+        <rect x="360" y="239" width="120" height="120" rx="60" transform="rotate(90 360 239)" fill="var(--color-three)"/>
+        <rect x="255" y="254" width="90" height="90" rx="45" fill="var(--color-two)"/>
+        <mask id="mask0_0_93" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="255" y="254" width="90" height="90">
+        <rect x="255" y="254" width="90" height="90" rx="45" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_0_93)">
+        <rect x="127" y="237" width="311" height="175" fill="url(#pattern0)"/>
+        </g>
+        <path d="M360 120V120C426.274 120 480 173.726 480 240V240L360 240L360 120Z" fill="var(--color-two)"/>
+        <path d="M360 120V120C426.274 120 480 66.2742 480 0V0L360 0L360 120Z" fill="var(--color-two)"/>
+        <path d="M480 239V239C480 305.274 426.274 359 360 359V359V239L480 239Z" fill="var(--color-one)"/>
+        <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_0_93" transform="scale(0.00160772 0.00285714)"/>
+        </pattern>
+        </defs>
+        </svg>
+
+        <h1 class="text-5xl font-bold">Your place to hangout and socialize.</h1>
+        <p class="my-10 w-3/4 mx-auto italic">
+          The choice was red, green, or blue. It didn't seem like an important choice when he was making it, but it was a choice nonetheless.
+        </p>
+        <button class="text-roll font-semibold px-8 h-14 rounded-sm" style="background-color: var(--color-one);">
+          Join now for free
+        </button>
+      </div>
+
+      <svg class="hidden md:block absolute bottom-0 left-0 w-96" viewBox="0 0 480 479" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M0 0H120V120V120C53.7258 120 0 66.2742 0 0V0Z" fill="var(--color-two)"/>
+      <path d="M120 120V120C186.274 120 240 173.726 240 240V240L120 240L120 120Z" fill="var(--color-two)"/>
+      <path d="M120 359V359C120 292.726 173.726 239 240 239V239V359H120Z" fill="var(--color-one)"/>
+      <path d="M120 359L240 359L240 479V479C173.726 479 120 425.274 120 359V359Z" fill="var(--color-one)"/>
+      <mask id="mask0_2_210" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="120" y="359" width="120" height="120">
+      <path d="M120 359L240 359L240 479V479C173.726 479 120 425.274 120 359V359Z" fill="white"/>
+      </mask>
+      <g mask="url(#mask0_2_210)">
+      <rect x="115" y="324" width="125" height="188" fill="url(#pattern0)"/>
+      </g>
+      <path d="M120 359C53.7258 359 0 305.274 0 239V239H120L120 359V359Z" fill="var(--color-two)"/>
+      <path d="M0 240V240C0 173.726 53.7258 120 120 120V120L120 240H0Z" fill="var(--color-three)"/>
+      <rect x="360" y="239" width="120" height="120" rx="60" transform="rotate(90 360 239)" fill="var(--color-two)"/>
+      <path d="M360 359H380C435.228 359 480 403.772 480 459V479H360V359Z" fill="var(--color-two)"/>
+      <path d="M240 479V359H360V359C360 425.274 306.274 479 240 479V479Z" fill="var(--color-three)"/>
+      <defs>
+      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_2_210" transform="scale(0.00555556 0.0037037)"/>
+      </pattern>
+      </defs>
+      </svg>
+
+      <svg class="hidden md:block absolute bottom-0 right-0 w-96" viewBox="0 0 480 359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M120 120C120 53.7258 173.726 0 240 0V0V120H120V120Z" fill="var(--color-two)"/>
+      <path d="M120 120V120C186.274 120 240 173.726 240 240V240L120 240L120 120Z" fill="var(--color-one)"/>
+      <path d="M120 359V359C120 292.726 173.726 239 240 239V239V359H120Z" fill="var(--color-two)"/>
+      <path d="M240 0V0C306.274 0 360 53.7258 360 120V120H240V0Z" fill="var(--color-three)"/>
+      <path d="M0 359L0 239H120V239C120 305.274 66.2742 359 0 359V359Z" fill="var(--color-two)"/>
+      <path d="M0 240V240C0 173.726 53.7258 120 120 120V120L120 240H0Z" fill="var(--color-three)"/>
+      <path d="M360 120V120C360 186.274 306.274 240 240 240V240L240 120L360 120Z" fill="var(--color-one)"/>
+      <rect x="360" y="239" width="120" height="120" rx="60" transform="rotate(90 360 239)" fill="var(--color-three)"/>
+      <rect x="255" y="254" width="90" height="90" rx="45" fill="var(--color-two)"/>
+      <mask id="mask0_0_93" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="255" y="254" width="90" height="90">
+      <rect x="255" y="254" width="90" height="90" rx="45" fill="white"/>
+      </mask>
+      <g mask="url(#mask0_0_93)">
+      <rect x="127" y="237" width="311" height="175" fill="url(#pattern0)"/>
+      </g>
+      <path d="M360 120V120C426.274 120 480 173.726 480 240V240L360 240L360 120Z" fill="var(--color-two)"/>
+      <path d="M360 120V120C426.274 120 480 66.2742 480 0V0L360 0L360 120Z" fill="var(--color-two)"/>
+      <path d="M480 239V239C480 305.274 426.274 359 360 359V359V239L480 239Z" fill="var(--color-one)"/>
+      <defs>
+      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_0_93" transform="scale(0.00160772 0.00285714)"/>
+      </pattern>
+      </defs>
+      </svg>
+    </section>
+
+    <section class="flex justify-between items-center container max-w-6xl mx-auto p-8 gap-x-8">
+      <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-up">
+        <button class="px-4 py-2 mb-6 font-medium" style="background-color: var(--color-one-light); color: var(--color-one);">
+          Moon Shard
+        </button>
+        <h2 class="text-3xl font-bold md:w-3/4">The light path of unconscious tendencies.</h2>
+        <p class="mt-5 md:w-3/4 italic">
+          The tree missed the days the kids used to come by and play. It still wore the tire swing the kids had put up in its branches years ago although both the tire and the rope had seen better days.
+        </p>
+
+        <div class="mt-10 flex flex-col md:flex-row flex-wrap items-center md:items-start gap-8">
+          <div class="md:w-2/5 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+            <div class="w-16 h-16 md:w-12 md:h-12 rounded-md inline-flex items-center justify-center" style="background-color: var(--color-one-light);">
+              <svg class="h-10 md:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_0_147" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9981 0.716919C11.0251 0.716919 10.2365 1.5058 10.2365 2.4792C10.2365 3.4523 11.0251 4.24118 11.9981 4.24118C12.9712 4.24118 13.7604 3.4523 13.7604 2.4792C13.7604 1.50611 12.9712 0.716919 11.9981 0.716919ZM18.2818 14.1984C18.2818 17.6678 15.4688 20.4808 11.9985 20.4808C8.52843 20.4808 5.71545 17.6678 5.71545 14.1984C5.71545 10.728 8.52843 7.91536 11.9985 7.91536C15.4688 7.91536 18.2818 10.728 18.2818 14.1984ZM1.86329 18.3781C0.890201 18.3781 0.101318 19.1676 0.101318 20.141C0.101318 21.1138 0.890201 21.903 1.86329 21.903C2.83669 21.903 3.62527 21.1138 3.62527 20.141C3.62527 19.1676 2.83669 18.3781 1.86329 18.3781ZM20.4449 20.141C20.4449 19.1676 21.2338 18.3781 22.2072 18.3781C23.1806 18.3781 23.9689 19.1676 23.9689 20.141C23.9689 21.1138 23.1806 21.903 22.2072 21.903C21.2338 21.903 20.4449 21.1138 20.4449 20.141ZM9.56667 21.2372C6.56636 20.2009 4.55067 17.372 4.55067 14.1984C4.55067 13.8063 4.58246 13.4089 4.6448 13.0161L4.64854 12.9806C4.64854 12.9806 4.65197 12.9014 4.65197 12.8603C4.65197 12.2684 4.16636 11.7812 3.55451 11.7744C2.77903 11.7744 2.51254 12.4367 2.48168 12.7699C2.41124 13.2434 2.37571 13.724 2.37571 14.1984C2.37571 15.6131 2.69269 16.9724 3.25872 18.2051L4.43815 18.4691C4.48895 18.4803 4.53228 18.5125 4.55815 18.5576C4.58402 18.6028 4.58932 18.6565 4.57342 18.706L4.20688 19.8362C5.3327 21.3918 6.92043 22.6149 8.81706 23.2797C8.87753 23.3065 9.03586 23.3667 9.23753 23.3667C9.53675 23.3667 10.0694 23.232 10.2758 22.3313C10.4138 21.7266 9.8768 21.3529 9.56667 21.2372ZM19.3939 18.5576C19.368 18.6028 19.3624 18.6568 19.3783 18.706L19.757 19.8745C18.6514 21.3859 17.1105 22.5812 15.2727 23.2464L15.23 23.2891L15.1568 23.2894C15.044 23.3283 14.9271 23.3477 14.808 23.3477C14.228 23.3477 13.7511 22.877 13.7224 22.2764C13.6953 21.7051 14.1606 21.3529 14.4399 21.235C17.4415 20.184 19.4463 17.3592 19.4463 14.1984C19.4463 13.7919 19.411 13.3749 19.3412 12.9582C19.3253 12.8912 19.316 12.812 19.316 12.7334C19.316 12.1531 19.7745 11.6865 20.3826 11.6481C21.0979 11.602 21.4108 12.2076 21.4729 12.5218C21.572 13.0872 21.6215 13.6492 21.6215 14.1984C21.6215 15.6075 21.3061 16.9637 20.7419 18.1942L19.5139 18.4691C19.4631 18.4803 19.4194 18.5121 19.3939 18.5576ZM18.2503 6.88554L18.2743 6.90861C18.3052 6.94102 18.5717 7.23681 18.5583 7.66165C18.5399 8.26539 18.063 8.73822 17.4723 8.73822C17.246 8.73822 17.0276 8.66746 16.8409 8.53375L16.839 8.53228C16.7578 8.46847 14.5719 6.75058 11.9978 6.75058C10.2608 6.75058 8.56958 7.36211 7.23586 8.47266C7.15514 8.53032 6.84064 8.73822 6.51929 8.73822H6.51898C5.9888 8.73791 5.5649 8.33583 5.43929 7.71401C5.35638 7.30383 5.61508 6.98217 5.78121 6.85687C7.25363 5.60326 9.08355 4.82871 11.0076 4.62892L11.857 5.57115C11.8919 5.60949 11.9411 5.63162 11.9932 5.63193H11.9941C12.0458 5.63193 12.0951 5.61043 12.13 5.5724L12.9971 4.62954C14.9274 4.83183 16.7632 5.61354 18.2503 6.88554Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_0_147)">
+              <rect width="24" height="24" fill="var(--color-one)"/>
+              </g>
+              </svg>
+            </div>
+            <p class="mt-4">
+              The river slowly meandered through the open space.
+            </p>
+          </div>
+
+          <div class="md:w-2/5 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+            <div class="w-16 h-16 md:w-12 md:h-12 rounded-md  inline-flex items-center justify-center" style="background-color: var(--color-two-light);">
+              <svg class="h-10 md:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_0_146" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="22" height="24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9048 1.90476C13.9048 2.95673 13.052 3.80952 12 3.80952C10.9481 3.80952 10.0953 2.95673 10.0953 1.90476C10.0953 0.852791 10.9481 0 12 0C13.052 0 13.9048 0.852791 13.9048 1.90476ZM5.16194 6.95238C5.16194 8.00435 4.30915 8.85714 3.25718 8.85714C2.20521 8.85714 1.35242 8.00435 1.35242 6.95238C1.35242 5.90041 2.20521 5.04762 3.25718 5.04762C4.30915 5.04762 5.16194 5.90041 5.16194 6.95238ZM3.25718 18.9524C4.30915 18.9524 5.16194 18.0996 5.16194 17.0476C5.16194 15.9956 4.30915 15.1429 3.25718 15.1429C2.20521 15.1429 1.35242 15.9956 1.35242 17.0476C1.35242 18.0996 2.20521 18.9524 3.25718 18.9524ZM13.9048 22.0952C13.9048 23.1472 13.052 24 12 24C10.9481 24 10.0953 23.1472 10.0953 22.0952C10.0953 21.0433 10.9481 20.1905 12 20.1905C13.052 20.1905 13.9048 21.0433 13.9048 22.0952ZM20.7429 18.9524C21.7949 18.9524 22.6477 18.0996 22.6477 17.0476C22.6477 15.9956 21.7949 15.1429 20.7429 15.1429C19.6909 15.1429 18.8381 15.9956 18.8381 17.0476C18.8381 18.0996 19.6909 18.9524 20.7429 18.9524ZM22.6477 6.95238C22.6477 8.00435 21.7949 8.85714 20.7429 8.85714C19.6909 8.85714 18.8381 8.00435 18.8381 6.95238C18.8381 5.90041 19.6909 5.04762 20.7429 5.04762C21.7949 5.04762 22.6477 5.90041 22.6477 6.95238ZM12 16.7619C14.63 16.7619 16.7619 14.6299 16.7619 12C16.7619 9.37007 14.63 7.2381 12 7.2381C9.37011 7.2381 7.23813 9.37007 7.23813 12C7.23813 14.6299 9.37011 16.7619 12 16.7619Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_0_146)">
+              <rect width="24" height="24" fill="var(--color-two)"/>
+              </g>
+              </svg>
+
+            </div>
+            <p class="mt-4">
+              He stared out the window at the snowy field.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:block w-1/2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <svg class="w-3/4" viewBox="0 0 457 718" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="98.5" y="0.5" width="358" height="717" rx="14.5" fill="#F6FBFF" stroke="#E1F2FF"/>
+        <rect x="138" y="153" width="279" height="150" rx="10" fill="white"/>
+        <rect x="138" y="335" width="279" height="150" rx="10" fill="white"/>
+        <rect x="138" y="517" width="279" height="150" rx="10" fill="white"/>
+        <rect x="261" y="585" width="114" height="15" rx="7.5" fill="var(--color-one)"/>
+        <rect opacity="0.395717" x="155" y="556" width="76" height="76" rx="24" fill="var(--color-one)"/>
+        <rect x="261" y="405" width="114" height="15" rx="7.5" fill="var(--color-one)"/>
+        <rect opacity="0.395717" x="155" y="376" width="76" height="76" rx="24" fill="var(--color-one)"/>
+        <path d="M268.79 212.165V212.165C331.454 190.589 399.744 223.896 421.321 286.559V286.559L307.858 325.628L268.79 212.165Z" fill="var(--color-three)"/>
+        <path d="M194.396 364.696V364.696C172.819 302.032 206.127 233.742 268.79 212.165V212.165L307.858 325.627L194.396 364.696Z" fill="var(--color-two)"/>
+        <rect x="0.5" y="185.5" width="260" height="348" rx="14.5" fill="#EBF6FF" stroke="#E2F2FF"/>
+        <rect opacity="0.395717" x="40" y="225" width="48" height="48" rx="24" fill="var(--color-one)"/>
+        <rect opacity="0.395717" x="131" y="37" width="48" height="48" rx="24" fill="var(--color-one)"/>
+        <rect x="107" y="242" width="114" height="15" rx="7.5" fill="var(--color-one)"/>
+        <rect x="40" y="305" width="48" height="48" rx="24" fill="#D0E3F4"/>
+        <rect x="107" y="322" width="114" height="15" rx="7.5" fill="#D0E3F4"/>
+        <rect x="40" y="385" width="48" height="48" rx="24" fill="#D0E3F4"/>
+        <rect x="107" y="402" width="114" height="15" rx="7.5" fill="#D0E3F4"/>
+        <mask id="mask0_2_212" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="390" y="45" width="22" height="32">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M394 58C394 54.1402 397.14 51 401 51C404.86 51 408 54.1402 408 58V66H394V58ZM400 49.0552V47.5C400 46.1215 401.122 45 402.5 45C403.878 45 405 46.1215 405 47.5C405 48.0523 404.552 48.5 404 48.5C403.448 48.5 403 48.0523 403 47.5C403 47.2243 402.776 47 402.5 47C402.224 47 402 47.2243 402 47.5V49.0552C406.494 49.5542 410 53.3753 410 58V66.1714C411.164 66.5841 412 67.6963 412 69C412 70.6542 410.654 72 409 72H404.873C404.957 72.3239 405 72.6596 405 73C405 75.2056 403.206 77 401 77C398.794 77 397 75.2056 397 73C397 72.6596 397.043 72.3239 397.127 72H393C391.346 72 390 70.6542 390 69C390 67.6963 390.836 66.5841 392 66.1714V58C392 53.3753 395.506 49.5542 400 49.0552ZM398.764 70H403.236H409C409.551 70 410 69.5514 410 69C410 68.4486 409.551 68 409 68H393C392.449 68 392 68.4486 392 69C392 69.5514 392.449 70 393 70H398.764ZM399.268 72C399.093 72.3015 399 72.6456 399 73C399 74.1028 399.897 75 401 75C402.103 75 403 74.1028 403 73C403 72.6456 402.907 72.3015 402.732 72H399.268Z" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_2_212)">
+        <rect x="385" y="45" width="32" height="32" fill="var(--color-two)"/>
+        </g>
+        </svg>
+
+      </div>
+    </section>
+
+    <svg class="hidden lg:block absolute left-0 w-44" style="transform: translateY(-50%);" viewBox="0 0 240 479" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0C66.2742 0 120 53.7258 120 120H0V0Z" fill="var(--color-three)"/>
+    <path d="M120 120C120 186.274 66.2742 240 0 240L0 120L120 120Z" fill="var(--color-one)"/>
+    <rect x="120" y="239" width="120" height="120" rx="60" transform="rotate(90 120 239)" fill="var(--color-two)"/>
+    <path d="M120 120C186.274 120 240 173.726 240 240L120 240L120 120Z" fill="var(--color-two)"/>
+    <path d="M120 239C120 305.274 173.726 359 240 359L240 239L120 239Z" fill="var(--color-one)"/>
+    <path d="M0 479L0 359H120C120 425.274 66.2742 479 0 479Z" fill="#FDE24F"/>
+    </svg>
+
+    <section class="flex flex-row-reverse justify-between items-center container max-w-6xl mx-auto p-8 gap-x-8">
+      <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-up">
+        <button class="px-4 py-2 mb-6 font-medium" style="background-color: var(--color-one-light); color: var(--color-one);">
+          Virtual World
+        </button>
+        <h2 class="text-3xl font-bold md:w-3/4">When everything else fell away.</h2>
+        <p class="mt-5 md:w-3/4 italic">
+          Colors bounced around in her head. They mixed and threaded themselves together.
+        </p>
+
+        <div class="mt-10 flex flex-col md:flex-row flex-wrap items-center md:items-start gap-8">
+          <div class="md:w-2/5 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+            <div class="w-16 h-16 md:w-12 md:h-12 rounded-md bg-opacity-20 inline-flex items-center justify-center" style="background-color: var(--color-one-light);">
+              <svg class="h-10 md:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_0_155" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.93295 5.99006C9.93295 2.81437 12.5166 0.230713 15.6923 0.230713C18.8681 0.230713 21.4516 2.81437 21.4515 5.99006C21.4515 6.37162 21.4127 6.74728 21.3397 7.11299L21.3397 7.11318C21.2752 7.43643 21.1833 7.75157 21.0661 8.05584L21.0623 8.06573C21.0434 8.11457 21.0238 8.16318 21.0036 8.21151L21.0015 8.21648C20.9195 8.41143 20.8271 8.60137 20.7246 8.78568L20.7125 8.80767C20.6902 8.84742 20.6673 8.88684 20.644 8.92607L20.6238 8.95987C20.6009 8.99788 20.5778 9.03571 20.554 9.07317L20.5446 9.08783L20.5345 9.1034C20.4577 9.22293 20.3765 9.3396 20.2911 9.45323L20.2792 9.46915L20.2647 9.48853C20.2416 9.51867 20.218 9.54839 20.1944 9.5781C20.1804 9.59573 20.1664 9.61331 20.1522 9.63074C20.1297 9.6584 20.1068 9.68582 20.0838 9.71306C20.0676 9.73223 20.0512 9.75121 20.0347 9.7702C20.0123 9.79598 19.9898 9.82171 19.967 9.84712C19.95 9.86597 19.9327 9.88458 19.9154 9.90318L19.915 9.90362L19.9108 9.90815L19.894 9.92639L19.894 9.9264L19.8939 9.92641L19.8939 9.92642L19.8939 9.92643L19.8939 9.92645C19.8777 9.94401 19.8615 9.96158 19.845 9.97884C19.8064 10.0191 19.7671 10.0589 19.7273 10.098C19.7147 10.1105 19.7019 10.1227 19.689 10.1349L19.6889 10.135L19.668 10.1549C19.6436 10.1784 19.6191 10.2018 19.5942 10.2248C19.5773 10.2404 19.5601 10.2558 19.5429 10.2713L19.5317 10.2813C19.5065 10.304 19.4812 10.3264 19.4556 10.3485C19.4349 10.3664 19.4142 10.3842 19.3932 10.4018C19.3657 10.425 19.3379 10.4478 19.3098 10.4705L19.3028 10.4762C19.2856 10.4902 19.2684 10.5041 19.251 10.5179C19.2157 10.5458 19.1797 10.5731 19.1436 10.6003L19.1262 10.6135C19.1192 10.6188 19.1123 10.6241 19.1053 10.6293C19.0566 10.6652 19.0072 10.7002 18.9574 10.7347C18.9467 10.742 18.9359 10.7492 18.9251 10.7564L18.908 10.7678C18.8727 10.7916 18.8373 10.8152 18.8015 10.8382C18.786 10.8482 18.7704 10.858 18.7548 10.8677L18.7426 10.8754C18.7087 10.8967 18.6745 10.9176 18.64 10.9381C18.62 10.9501 18.6 10.962 18.5798 10.9737C18.543 10.9951 18.5058 11.0159 18.4683 11.0366L18.4472 11.0483C18.4367 11.0541 18.4262 11.06 18.4155 11.0657C18.3605 11.0953 18.3048 11.1243 18.2485 11.1523L17.2416 12.7045L16.4507 13.9239L16.3846 14.0258L16.2731 14.1977C16.1454 14.3946 15.9269 14.5133 15.6923 14.5133C15.4578 14.5133 15.2392 14.3945 15.1115 14.1977L15 14.0258L14.135 12.6922L13.1361 11.1522C13.0799 11.1244 13.0245 11.0954 12.9694 11.0658C12.9568 11.059 12.9443 11.0521 12.9318 11.0452L12.9318 11.0452L12.917 11.0369C12.8794 11.0163 12.8421 10.9954 12.8051 10.9739C12.7853 10.9624 12.7656 10.9507 12.746 10.939C12.711 10.9182 12.6765 10.8969 12.642 10.8754L12.6318 10.869C12.6161 10.8592 12.6004 10.8494 12.5849 10.8394C12.5473 10.8152 12.5101 10.7906 12.4732 10.7656L12.457 10.7548L12.4569 10.7547L12.4347 10.7399L12.4296 10.7364C12.3796 10.7019 12.3302 10.6668 12.2815 10.6309C12.2734 10.6249 12.2655 10.6189 12.2576 10.6128L12.2392 10.5988C12.2044 10.5726 12.1697 10.5463 12.1356 10.5194C12.1189 10.5063 12.1024 10.4929 12.0859 10.4796L12.0784 10.4735C12.0497 10.4502 12.0211 10.4267 11.9928 10.403C11.973 10.3863 11.9531 10.3694 11.9335 10.3525C11.9062 10.3289 11.8792 10.3049 11.8523 10.2809L11.8448 10.2741C11.8283 10.2593 11.8117 10.2446 11.7954 10.2296C11.7652 10.2016 11.7355 10.1733 11.7059 10.1447C11.6829 10.1227 11.6601 10.1005 11.6375 10.078C11.6056 10.0463 11.5739 10.0144 11.5428 9.98193C11.5276 9.96615 11.5128 9.95012 11.4979 9.93409L11.4838 9.91893C11.4625 9.8961 11.4412 9.87318 11.4203 9.85003C11.3996 9.82701 11.3791 9.80376 11.3588 9.78042C11.3399 9.75871 11.3212 9.73696 11.3025 9.71498C11.2817 9.69046 11.2611 9.66585 11.2407 9.64096C11.2259 9.62287 11.2114 9.6046 11.1968 9.58633L11.1967 9.58619L11.1902 9.57796L11.1778 9.56236L11.1778 9.56235C11.1609 9.54126 11.1441 9.5202 11.1277 9.49884C11.1221 9.49149 11.1166 9.48399 11.111 9.47649L11.0995 9.46101C11.0535 9.40012 11.0089 9.33834 10.9654 9.27571L10.9555 9.26152L10.9418 9.2419L10.9305 9.22551C10.9093 9.19424 10.8886 9.16265 10.8681 9.13101C10.8565 9.11339 10.845 9.09576 10.8338 9.07799C10.8132 9.04565 10.793 9.01312 10.773 8.98035L10.7516 8.94456L10.7435 8.9309C10.7227 8.89612 10.7021 8.86124 10.6822 8.82599L10.6668 8.7981C10.596 8.67145 10.53 8.54212 10.4689 8.41035L10.4633 8.39849L10.4543 8.37918C10.4359 8.33892 10.4182 8.29837 10.4007 8.25768L10.385 8.22079C10.3675 8.17931 10.3504 8.13759 10.3338 8.09563L10.3241 8.07037C10.2499 7.8794 10.1857 7.68412 10.132 7.48513L10.1247 7.45818C10.1127 7.41262 10.1011 7.36687 10.0902 7.32093L10.0835 7.29224C9.98522 6.87051 9.93295 6.43424 9.93295 5.99006ZM12.5652 5.99006C12.5652 7.71435 13.968 9.11718 15.6923 9.11718C17.4165 9.11718 18.8194 7.71435 18.8194 5.99006C18.8194 4.26571 17.4166 2.86288 15.6923 2.86288C13.968 2.86288 12.5652 4.26576 12.5652 5.99006ZM9.62625 9.76031C9.33319 9.2887 9.09839 8.78756 8.92303 8.26771V15.9007L11.3814 11.6864C10.6873 11.1601 10.0915 10.5089 9.62625 9.76031ZM22.6863 7.44271L23.4724 7.63523C23.7821 7.71107 24 7.98871 24 8.30765V16.8461H20.6355L18.1629 13.8287L19.2155 12.2059C20.2514 11.618 21.1253 10.7789 21.7583 9.76035C22.2039 9.04345 22.5163 8.25904 22.6863 7.44271ZM0.856969 5.78906C0.650578 5.73848 0.432234 5.78554 0.264891 5.91679C0.0976875 6.04809 0 6.2489 0 6.46148V13.1538H3.6923C3.87792 13.1538 4.05577 13.2283 4.18589 13.3607L7.53844 16.77V7.42532L0.856969 5.78906ZM12.4846 12.6922L13.9499 14.9512C14.2037 15.3426 14.5744 15.6289 15 15.7789V22.1319L8.92303 23.6201V18.6487L12.3976 12.6922H12.4846ZM20.3077 18.2307C20.1002 18.2307 19.9037 18.1377 19.7722 17.9772L17.3695 15.0451C17.1193 15.3884 16.7753 15.6412 16.3846 15.7788V22.0941L23.143 23.7492C23.1975 23.7626 23.2527 23.7691 23.3076 23.7691C23.461 23.7691 23.6119 23.7181 23.7351 23.6214C23.9023 23.4902 24 23.2894 24 23.0768V18.2307H20.3077ZM0 14.5384H3.40214L7.53844 18.7448V23.6201L0.527625 21.9031C0.217828 21.8273 0 21.5497 0 21.2307V14.5384Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_0_155)">
+              <rect width="24" height="24" fill="var(--color-one)"/>
+              </g>
+              </svg>
+
+            </div>
+            <p class="mt-4">
+              Betty decided to write a short story.
+            </p>
+          </div>
+
+          <div class="md:w-2/5 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+            <div class="w-16 h-16 md:w-12 md:h-12 rounded-md inline-flex items-center justify-center" style="background-color: var(--color-two-light);">
+              <svg class="h-10 md:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_0_158" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9767 3.24366C23.9767 2.00608 22.9686 0.998047 21.731 0.998047H2.26905C1.03147 0.998047 0.0234375 2.00608 0.0234375 3.24366C0.0234375 4.48124 1.03147 5.48927 2.26905 5.48927H21.731C22.9686 5.48927 23.9767 4.48124 23.9767 3.24366ZM10.6926 13.0345L7.45892 16.1884C7.25931 16.378 7.00979 16.4678 6.76028 16.4678C6.50079 16.4678 6.24129 16.368 6.04168 16.1684C5.66242 15.7692 5.6724 15.1404 6.06164 14.7512L9.8742 11.0484C10.2036 10.7191 10.7225 10.6692 11.1118 10.9287L13.2276 12.296L16.4713 8.35368C16.6709 8.11415 16.9504 7.9844 17.2398 7.9844C17.4694 7.9844 17.6889 8.06425 17.8786 8.21395C18.2977 8.56327 18.3576 9.19204 18.0083 9.6212L14.1958 14.2522C13.8764 14.6414 13.3075 14.7312 12.8883 14.4518L10.6926 13.0345ZM6.76028 17.9649H3.51661C2.55849 17.9649 1.77003 17.1864 1.77003 16.2183V6.43742C1.8057 6.44188 1.84187 6.44684 1.87843 6.45185C2.00552 6.46927 2.13729 6.48733 2.26905 6.48733H17.2398H21.731C21.8628 6.48733 21.9946 6.46927 22.1217 6.45185L22.1217 6.45185L22.1217 6.45184C22.1583 6.44683 22.1944 6.44188 22.2301 6.43742V16.2183C22.2301 17.1864 21.4516 17.9649 20.4835 17.9649H6.76028ZM12.7486 18.963V20.1107C13.4772 20.4002 13.9961 21.1187 13.9961 21.9571C13.9961 23.055 13.0979 23.9532 12 23.9532C10.9022 23.9532 10.0039 23.055 10.0039 21.9571C10.0039 21.1187 10.5229 20.4002 11.2515 20.1107V18.963H12.7486Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_0_158)">
+              <rect width="24" height="24" fill="var(--color-two)"/>
+              </g>
+              </svg>
+
+            </div>
+            <p class="mt-4">
+              Dave watched as the forest burned up on the hill.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:block w-1/2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <svg class="w-3/4" viewBox="0 0 457 718" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="358" height="717" rx="14.5" fill="#F6FBFF" stroke="#E1F2FF"/>
+        <rect x="0.5" y="0.5" width="267" height="717" rx="14.5" fill="#FCFDFF" stroke="#E1F2FF"/>
+        <rect opacity="0.395717" x="48" y="69" width="48" height="48" rx="24" fill="var(--color-one)"/>
+        <rect x="115" y="86" width="114" height="15" rx="7.5" fill="var(--color-one)"/>
+        <rect x="48" y="149" width="48" height="48" rx="24" fill="#D0E3F4"/>
+        <rect x="115" y="166" width="114" height="15" rx="7.5" fill="#D0E3F4"/>
+        <rect x="48" y="229" width="48" height="48" rx="24" fill="#D0E3F4"/>
+        <rect x="115" y="246" width="114" height="15" rx="7.5" fill="#D0E3F4"/>
+        <rect opacity="0.395717" x="48" y="307" width="48" height="48" rx="24" fill="var(--color-one)"/>
+        <rect x="115" y="324" width="114" height="15" rx="7.5" fill="var(--color-one)"/>
+        <rect x="48" y="387" width="48" height="48" rx="24" fill="#D0E3F4"/>
+        <rect x="115" y="404" width="114" height="15" rx="7.5" fill="#D0E3F4"/>
+        <rect x="48" y="467" width="48" height="48" rx="24" fill="#D0E3F4"/>
+        <rect x="115" y="484" width="114" height="15" rx="7.5" fill="#D0E3F4"/>
+        <rect x="48" y="632" width="48" height="48" rx="24" fill="#D0E3F4"/>
+        <rect x="115" y="649" width="114" height="15" rx="7.5" fill="#D0E3F4"/>
+        <rect x="196.5" y="185.5" width="260" height="348" rx="14.5" fill="#EBF6FF" stroke="#E2F2FF"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M341.5 416H412.5V277H293.5V368L341.5 416Z" fill="var(--color-one)" fill-opacity="0.09"/>
+        <path d="M196 368H293.5V278.5H376.5V204H457" stroke="white" stroke-width="11"/>
+        <path d="M293.5 368L389 463.5L318.5 534" stroke="white" stroke-width="11"/>
+        <mask id="mask0_2_213" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="338" y="277" width="58" height="80">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M338.027 305.973C338.027 289.997 351.024 277 367 277C382.976 277 395.973 289.997 395.973 305.973C395.973 325.799 370.045 354.905 368.941 356.135C367.906 357.287 366.096 357.289 365.059 356.135C363.955 354.905 338.027 325.799 338.027 305.973ZM352.423 305.973C352.423 314.011 358.962 320.55 367 320.55C375.038 320.55 381.577 314.011 381.577 305.973C381.577 297.935 375.038 291.396 367 291.396C358.962 291.396 352.423 297.935 352.423 305.973Z" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_2_213)">
+        <rect x="327" y="277" width="80" height="80" fill="var(--color-one)"/>
+        </g>
+        </svg>
+      </div>
+    </section>
+
+    <svg class="hidden lg:block absolute right-0 w-44" style="transform: translateY(-50%);" viewBox="0 0 240 479" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M120 120C120 53.7258 173.726 0 240 0V120H120Z" fill="var(--color-one)"/>
+    <path d="M120 120C186.274 120 240 173.726 240 240L120 240L120 120Z" fill="#FDE24F"/>
+    <path d="M120 359C120 292.726 173.726 239 240 239V359H120Z" fill="var(--color-two)"/>
+    <path d="M120 359L240 359L240 479C173.726 479 120 425.274 120 359Z" fill="var(--color-one)"/>
+    <path d="M120 359C53.7258 359 0 305.274 0 239H120L120 359Z" fill="var(--color-one)"/>
+    <path d="M0 240L0 120C66.2742 120 120 173.726 120 240H0Z" fill="var(--color-one)"/>
+    </svg>
+
+
+    <section class="flex flex-col md:flex-row justify-center items-center container max-w-6xl mx-auto p-8" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold md:w-3/4">The door slowly opened and revealed the scene beyond.</h2>
+        <p class="mt-5 md:w-3/4 italic">
+          She had been an angel for coming up on 10 years.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center items-start gap-8 mt-10 md:mt-0">
+        <div class="md:w-2/5 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+          <div class="w-16 h-16 md:w-12 md:h-12 rounded-md inline-flex items-center justify-center" style="background-color: var(--color-one-light);">
+            <svg class="h-10 md:h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_0_191" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4866 24.4979C40.9362 23.9559 40.0517 23.9593 39.5057 24.5055L36.75 27.2611L34.6256 25.1367L47.5854 12.2469C48.1369 11.6984 48.1383 10.8056 47.5882 10.2554L43.6607 6.32798L44.7389 5.24976C45.288 4.70067 45.288 3.81023 44.7389 3.26104C44.1898 2.71195 43.2994 2.71195 42.7502 3.26104L41.6719 4.33926L37.7443 0.411791C37.1944 -0.13824 36.3015 -0.137021 35.7529 0.414416L22.8631 13.3743L20.7387 11.2499L23.4944 8.49417C24.0406 7.94807 24.044 7.06354 23.5021 6.51313L17.5021 0.419385C16.9522 -0.139084 16.0505 -0.140115 15.4995 0.417885L7.9995 8.01164C7.45613 8.56176 7.45884 9.44732 8.00569 9.99407L14.0057 15.9941C14.555 16.5434 15.4452 16.5433 15.9944 15.9941L18.75 13.2386L20.8798 15.3684L18.503 17.7582C17.9563 18.3077 17.9575 19.1961 18.5057 19.7443L22.3864 23.6249L20.3464 25.6649C16.5321 22.7209 11.184 22.6239 7.13456 25.5769C6.43753 26.0851 6.3585 27.0972 6.96881 27.7075L20.2926 41.0313C20.9017 41.6406 21.9139 41.5638 22.4231 40.8656C25.3762 36.8163 25.279 31.4683 22.335 27.6538L24.375 25.6138L28.2557 29.4944C28.8022 30.0409 29.6903 30.0454 30.2417 29.4972L32.6316 27.1202L34.7614 29.25L32.0057 32.0057C31.4565 32.5548 31.4565 33.4453 32.0057 33.9944L38.0057 39.9944C38.5515 40.5404 39.4373 40.5449 39.9882 40.0005L47.582 32.5005C48.1401 31.9495 48.1388 31.0478 47.5804 30.498L41.4866 24.4979ZM13.5 39.0936C10.967 39.0936 8.90625 37.0329 8.90625 34.4999C8.90625 33.7232 8.27662 33.0936 7.5 33.0936C6.72337 33.0936 6.09375 33.7232 6.09375 34.4999C6.09375 38.5837 9.41616 41.9061 13.5 41.9061C14.2766 41.9061 14.9062 41.2765 14.9062 40.4999C14.9062 39.7232 14.2766 39.0936 13.5 39.0936ZM2.8125 34.4999C2.8125 40.3929 7.60687 45.1874 13.5 45.1874C14.2766 45.1874 14.9062 45.817 14.9062 46.5936C14.9062 47.3702 14.2766 47.9999 13.5 47.9999C6.08972 47.9999 0 41.9118 0 34.4999C0 33.7232 0.629625 33.0936 1.40625 33.0936C2.18287 33.0936 2.8125 33.7232 2.8125 34.4999Z" fill="white"/>
+            </mask>
+            <g mask="url(#mask0_0_191)">
+            <rect width="48" height="48" fill="var(--color-one)"/>
+            </g>
+            </svg>
+          </div>
+          <p class="mt-4">
+            There wasn't a whole lot more that could be done.
+          </p>
+        </div>
+
+        <div class="md:w-2/5 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+          <div class="w-16 h-16 md:w-12 md:h-12 rounded-md inline-flex items-center justify-center" style="background-color: var(--color-one-light);">
+            <svg class="h-10 md:h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_0_347" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4657 17.0572C32.4718 15.3085 34.1165 14.0314 36.0158 13.477C34.7731 12.7421 33.9375 11.389 33.9375 9.84375C33.9375 7.51753 35.83 5.625 38.1562 5.625C40.4825 5.625 42.375 7.51753 42.375 9.84375C42.375 11.389 41.5394 12.7421 40.2968 13.477C42.1961 14.0314 43.8408 15.3085 44.8469 17.0572C46.785 15.2582 48 12.6905 48 9.84375C48 4.41591 43.5841 0 38.1562 0C32.7284 0 28.3125 4.41591 28.3125 9.84375C28.3125 12.6905 29.5275 15.2582 31.4657 17.0572ZM9.84375 14.1562C4.41591 14.1562 0 18.5722 0 24C0 26.8466 1.215 29.4144 3.15319 31.2134C4.15931 29.4648 5.80397 28.1876 7.70325 27.6333C6.46059 26.8984 5.625 25.5453 5.625 24C5.625 21.6738 7.51753 19.7812 9.84375 19.7812C12.17 19.7812 14.0625 21.6738 14.0625 24C14.0625 25.5453 13.2269 26.8984 11.9843 27.6333C13.8835 28.1876 15.5282 29.4648 16.5343 31.2134C18.4725 29.4144 19.6875 26.8466 19.6875 24C19.6875 18.5722 15.2716 14.1562 9.84375 14.1562ZM9.84375 30.1387C8.00841 30.1387 6.3165 31.1849 5.47706 32.8205C6.79369 33.4748 8.27634 33.8438 9.84375 33.8438C11.4112 33.8438 12.8937 33.4749 14.2104 32.8205C13.371 31.1848 11.679 30.1387 9.84375 30.1387ZM9.84375 25.4062C10.6204 25.4062 11.25 24.7767 11.25 24C11.25 23.2233 10.6204 22.5938 9.84375 22.5938C9.0671 22.5938 8.4375 23.2233 8.4375 24C8.4375 24.7767 9.0671 25.4062 9.84375 25.4062ZM38.1562 19.6875C36.5888 19.6875 35.1062 19.3187 33.7896 18.6641C34.6289 17.0287 36.3209 15.9824 38.1562 15.9824C39.9916 15.9824 41.6836 17.0286 42.5229 18.6642C41.2062 19.3187 39.7237 19.6875 38.1562 19.6875ZM39.5625 9.84375C39.5625 10.6204 38.9329 11.25 38.1562 11.25C37.3796 11.25 36.75 10.6204 36.75 9.84375C36.75 9.0671 37.3796 8.4375 38.1562 8.4375C38.9329 8.4375 39.5625 9.0671 39.5625 9.84375ZM28.3125 38.1562C28.3125 32.7284 32.7284 28.3125 38.1562 28.3125C43.5841 28.3125 48 32.7283 48 38.1562C48 41.0029 46.785 43.5707 44.8469 45.3697C43.8408 43.621 42.1961 42.3439 40.2968 41.7895C41.5394 41.0546 42.375 39.7015 42.375 38.1562C42.375 35.83 40.4825 33.9375 38.1562 33.9375C35.83 33.9375 33.9375 35.83 33.9375 38.1562C33.9375 39.7015 34.7731 41.0546 36.0158 41.7895C34.1165 42.3439 32.4718 43.621 31.4657 45.3697C29.5275 43.5707 28.3125 41.0029 28.3125 38.1562ZM38.1562 44.2948C36.321 44.2948 34.629 45.3411 33.7896 46.9766C35.1062 47.6311 36.5888 48 38.1562 48C39.7237 48 41.2062 47.6312 42.5229 46.9767C41.6835 45.3411 39.9915 44.2948 38.1562 44.2948ZM38.1562 39.5625C38.9329 39.5625 39.5625 38.9329 39.5625 38.1562C39.5625 37.3796 38.9329 36.75 38.1562 36.75C37.3796 36.75 36.75 37.3796 36.75 38.1562C36.75 38.9329 37.3796 39.5625 38.1562 39.5625ZM20.0287 16.4959C20.5843 17.2479 21.0585 18.0636 21.4387 18.9294L26.961 15.7412C26.5207 14.9086 26.1704 14.0215 25.9236 13.0927L20.0287 16.4959ZM25.9235 34.9074L20.0287 31.5041C20.5843 30.7521 21.0585 29.9365 21.4386 29.0706L26.9609 32.2589C26.5206 33.0914 26.1704 33.9786 25.9235 34.9074Z" fill="white"/>
+            </mask>
+            <g mask="url(#mask0_0_347)">
+            <rect width="48" height="48" fill="var(--color-one)"/>
+            </g>
+            </svg>
+
+          </div>
+          <p class="mt-4">
+            Greg understood that this situation would make Michael terribly uncomfortable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex items-start justify-center container max-w-6xl mx-auto p-8">
+      <div class="py-10 md:py-24 rounded-xl w-full flex flex-col items-center justify-center relative overflow-hidden text-center md:text-left p-8"
+        style="background-image: url(/assets/media/hero-pattern.svg); background-color: var(--color-three);" 
+      >
+        <h2 class="relative z-20 text-3xl font-bold text-center w-3/4">As he took in the view from the twentieth floor.</h2>
+        <p class="relative z-20 mt-4 italic text-center">
+          Mary had to make a decision and she knew that whatever decision she made, it would upset someone.
+        </p>
+        <button class="flex-shrink-0 text-roll text-white mt-6 px-8 h-14 rounded-sm font-semibold" style="background-color: var(--color-two);">
+          Join now
+        </button>
+        <svg class="hidden md:block absolute right-0 bottom-0 h-full pt-6" viewBox="0 0 240 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M120 120C120 53.7258 173.726 0 240 0V0V120H120V120Z" fill="var(--color-two)"/>
+        <path d="M120 120L240 120V140C240 195.228 195.228 240 140 240H120L120 120Z" fill="var(--color-one)"/>
+        <path d="M120 359V359C120 292.726 173.726 239 240 239V239V359H120Z" fill="var(--color-two)"/>
+        <path d="M0 359L0 239H120V239C120 305.274 66.2742 359 0 359V359Z" fill="var(--color-two)"/>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="relative container max-w-6xl mx-auto p-8">
+    <div class="flex items-start justify-between">
+      <div class="w-1/2">
+        <a href="./index.html" class="hover-none">
+          <img src="./assets/media/logo.svg" class="h-7">
+        </a>
+        <p class="mt-4 w-1/2 italic">
+          Dave watched as the forest burned up on the hill.
+        </p>
+      </div>
+
+      <div class="w-1/2 flex flex-col justify-between items-end">
+        <ul class="inline-flex flex-col md:flex-row items-end md:items-center space-y-5 md:space-y-0 md:space-x-10 mt-8">
+          <li>
+            <a onclick="scrollToTop()">Go to top</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="inline-flex items-center">
+              <span>Blog</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 ml-1 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-16 flex flex-col md:flex-row items-start md:items-center md:justify-between">
+      <p class="text-sm md:w-1/3">
+        Follow us on twitter: <a href="#" target="_blank">https://twitter.com/username</a>
+      </p>
+      <p class="md:w-1/3 text-sm text-left md:text-right mt-2 md:mt-0">
+        Design from <a href="https://dribbble.com/Rudrisha" target="_blank">Rudrisha Studion</a>; Code by <a href="https://github.com/rohanharikr" target="_blank">rohanharikr</a>.
+      </p>
+    </div>
+   
+    <svg class="hidden md:block h-44 absolute left-1/2 -bottom-9" style="transform: translateX(-50%);" viewBox="0 0 277 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M120 103L120 223C53.7258 223 0 169.274 0 103L120 103Z" fill="var(--color-two)"/>
+    <path d="M119 103C185.274 103 239 156.726 239 223L119 223L119 103Z" fill="var(--color-two)"/>
+    <path d="M191.959 85.1533L107.106 170.006C60.2433 123.143 60.2433 47.1634 107.106 0.300508L191.959 85.1533Z" fill="var(--color-one)"/>
+    <path d="M191.252 84.4463C238.115 131.309 238.115 207.289 191.252 254.152L106.399 169.299L191.252 84.4463Z" fill="var(--color-one)"/>
+    </svg>
+  </footer>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./assets/js/util.js" defer></script>
+</body>
+</html>

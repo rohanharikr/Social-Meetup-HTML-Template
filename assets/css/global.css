@@ -1,0 +1,91 @@
+@import 'colors.css';
+@import 'fonts.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Merriweather', serif;
+  overflow-x: auto;
+}
+
+body, header{
+  min-width: 340px;
+}
+
+/*LINKS*/
+a, a.selected {
+  cursor: pointer;
+  position: relative;
+}
+a:not(.hover-none)::after,a.selected::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-one);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:not(.hover-none):hover::after, a.selected::after,
+a:not(.hover-none):focus::after, a.selected::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+/*LINKS*/
+
+
+/*TEXT ROLL HOVER ANIMATION*/
+.text-roll {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-roll:hover:before{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+.text-roll:before{
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translate(0, -100%);
+  transition: all .2s ease-in-out;
+}
+
+.text-roll:hover span{
+  opacity: 0;
+  transform: translate(0, 100%)
+}
+
+.text-roll span{
+  display: block;
+  transition: all .2s ease-in-out;
+}
+/*TEXT ROLL HOVER ANIMATION*/
+
+#mobile-menu{
+  transition-timing-function: ease-in-out;
+}
+
+#photo-collage {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#photo-collage img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#photo-one { grid-area: 1 / 1 / 6 / 3; }
+#photo-two { grid-area: 1 / 3 / 4 / 6; }
+#photo-three { grid-area: 4 / 3 / 6 / 4; }
+#photo-four { grid-area: 4 / 4 / 6 / 6; } 

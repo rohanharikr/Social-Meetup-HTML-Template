@@ -1,0 +1,8 @@
+:root{
+  --color-one: rgb(0,235,199); /* #00EBC7 green */
+  --color-two: rgb(255,84,112); /* #FF5470 red */
+  --color-three: rgb(253, 226, 79); /* #FDE24F yellow */
+  --text: rgba(0,0,0,0.9);
+  --color-one-light: rgba(0,235,199, 0.2); /* #00EBC7 green */
+  --color-two-light: rgba(255,84,112, 0.2); /* #FF5470 red */
+}

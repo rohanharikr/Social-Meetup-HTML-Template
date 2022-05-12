@@ -1,0 +1,57 @@
+/*https://fonts.google.com/specimen/Merriweather*/
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../font/Merriweather-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../font/Merriweather-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../font/Merriweather-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../font/Merriweather-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../font/Merriweather-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../font/Merriweather-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../font/Merriweather-Black.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../font/Merriweather-BlackItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+}

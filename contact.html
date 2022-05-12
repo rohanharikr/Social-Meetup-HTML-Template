@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ebf1ff">
+  <title>Contact</title>
+  <link rel="icon" href="./assets/media/logo.svg"/>
+  <link href="./assets/css/global.css" rel="stylesheet">
+</head>
+<body style="color: var(--text);">
+  <header class="absolute w-full px-8 h-20 z-50">
+    <div class="flex items-center justify-between container max-w-6xl h-full mx-auto relative z-20">
+      <a href="./index.html" class="hover-none">
+        <img src="./assets/media/logo.svg" class="h-7">
+      </a>
+      <nav class="hidden md:block">
+        <ul class="inline-flex items-center space-x-10">
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="inline-flex items-center">
+              <span>Blog</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 ml-1 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html" class="selected">Contact</a>
+          </li>
+          <button class="text-roll px-5 h-10 rounded-sm font-semibold" style="background-color: var(--color-one);">
+            Signup
+          </button>
+        </ul>
+      </nav>
+
+      <button id="menu-btn" class="md:hidden" onclick="toggleMenu()">
+        <svg width="28" height="20" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="4.33333" fill="var(--color-two)"/>
+        <rect x="10" y="8.66667" width="10" height="4.33333" fill="var(--color-two)"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="h-screen w-screen fixed bg-white bg-opacity-90 backdrop-blur-sm px-8 py-32 text-right inset-0 z-10" style="visibility: hidden; transform: translateX(100%);">
+      <ul class="flex flex-col justify-end items-end space-y-10 text-2xl container mx-auto max-w-6xl">
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="inline-flex items-center">
+            <span>Blog</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 ml-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="./contact.html" class="selected">Contact</a>
+        </li>
+        <button class="text-roll px-8 h-12 rounded-sm font-semibold" style="background-color: var(--color-one);">
+          Signup
+        </button>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="flex items-center justify-center relative bg-no-repeat bg-cover"
+    style="background-image: url(/assets/media/hero-pattern.svg), linear-gradient(to top, #F6F9FF, #EBF1FF); height: 100vH; min-height: 40rem;" 
+    >
+      <div class="text-center container max-w-6xl mx-auto p-4">
+        <svg class="md:hidden w-64 my-12 mx-auto" viewBox="0 0 480 359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M120 120C120 53.7258 173.726 0 240 0V0V120H120V120Z" fill="var(--color-two)"/>
+        <path d="M120 120V120C186.274 120 240 173.726 240 240V240L120 240L120 120Z" fill="var(--color-one)"/>
+        <path d="M120 359V359C120 292.726 173.726 239 240 239V239V359H120Z" fill="var(--color-two)"/>
+        <path d="M240 0V0C306.274 0 360 53.7258 360 120V120H240V0Z" fill="var(--color-three)"/>
+        <path d="M0 359L0 239H120V239C120 305.274 66.2742 359 0 359V359Z" fill="var(--color-two)"/>
+        <path d="M0 240V240C0 173.726 53.7258 120 120 120V120L120 240H0Z" fill="var(--color-three)"/>
+        <path d="M360 120V120C360 186.274 306.274 240 240 240V240L240 120L360 120Z" fill="var(--color-one)"/>
+        <rect x="360" y="239" width="120" height="120" rx="60" transform="rotate(90 360 239)" fill="var(--color-three)"/>
+        <rect x="255" y="254" width="90" height="90" rx="45" fill="var(--color-two)"/>
+        <mask id="mask0_0_93" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="255" y="254" width="90" height="90">
+        <rect x="255" y="254" width="90" height="90" rx="45" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_0_93)">
+        <rect x="127" y="237" width="311" height="175" fill="url(#pattern0)"/>
+        </g>
+        <path d="M360 120V120C426.274 120 480 173.726 480 240V240L360 240L360 120Z" fill="var(--color-two)"/>
+        <path d="M360 120V120C426.274 120 480 66.2742 480 0V0L360 0L360 120Z" fill="var(--color-two)"/>
+        <path d="M480 239V239C480 305.274 426.274 359 360 359V359V239L480 239Z" fill="var(--color-one)"/>
+        <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_0_93" transform="scale(0.00160772 0.00285714)"/>
+        </pattern>
+        </defs>
+        </svg>
+
+        <h1 class="text-5xl font-bold">Get in touch.</h1>
+        <p class="my-10 w-3/4 mx-auto">
+          He looked at his phone, turned pale, then quickly left the room. She watched him, smiling.
+        </p>
+
+        <form class="flex flex-col items-center">
+          <div class="max-w-sm relative">
+            <svg class="absolute h-5 top-3.5 left-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="var(--color-one)" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <input type="email" name="email" placeholder="example@domain.com" autocomplete="email" autocapitalize="off" class="w-full h-12 px-10 focus:outline-none rounded-xl border-2" style="border-color: var(--color-one);">
+            <button type="submit" class="text-roll rounded-sm h-12 w-full bg-red-500 mt-3" style="background-color: var(--color-one);">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <svg class="hidden md:block absolute bottom-0 left-0 w-96 z-50" viewBox="0 0 480 479" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M0 0H120V120V120C53.7258 120 0 66.2742 0 0V0Z" fill="var(--color-two)"/>
+      <path d="M120 120V120C186.274 120 240 173.726 240 240V240L120 240L120 120Z" fill="var(--color-two)"/>
+      <path d="M120 359V359C120 292.726 173.726 239 240 239V239V359H120Z" fill="var(--color-one)"/>
+      <path d="M120 359L240 359L240 479V479C173.726 479 120 425.274 120 359V359Z" fill="var(--color-one)"/>
+      <mask id="mask0_2_210" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="120" y="359" width="120" height="120">
+      <path d="M120 359L240 359L240 479V479C173.726 479 120 425.274 120 359V359Z" fill="white"/>
+      </mask>
+      <g mask="url(#mask0_2_210)">
+      <rect x="115" y="324" width="125" height="188" fill="url(#pattern0)"/>
+      </g>
+      <path d="M120 359C53.7258 359 0 305.274 0 239V239H120L120 359V359Z" fill="var(--color-two)"/>
+      <path d="M0 240V240C0 173.726 53.7258 120 120 120V120L120 240H0Z" fill="var(--color-three)"/>
+      <rect x="360" y="239" width="120" height="120" rx="60" transform="rotate(90 360 239)" fill="var(--color-two)"/>
+      <path d="M360 359H380C435.228 359 480 403.772 480 459V479H360V359Z" fill="var(--color-two)"/>
+      <path d="M240 479V359H360V359C360 425.274 306.274 479 240 479V479Z" fill="var(--color-three)"/>
+      <defs>
+      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_2_210" transform="scale(0.00555556 0.0037037)"/>
+      </pattern>
+      </defs>
+      </svg>
+
+      <svg class="hidden md:block absolute bottom-0 right-0 w-96" viewBox="0 0 480 359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M120 120C120 53.7258 173.726 0 240 0V0V120H120V120Z" fill="var(--color-two)"/>
+      <path d="M120 120V120C186.274 120 240 173.726 240 240V240L120 240L120 120Z" fill="var(--color-one)"/>
+      <path d="M120 359V359C120 292.726 173.726 239 240 239V239V359H120Z" fill="var(--color-two)"/>
+      <path d="M240 0V0C306.274 0 360 53.7258 360 120V120H240V0Z" fill="var(--color-three)"/>
+      <path d="M0 359L0 239H120V239C120 305.274 66.2742 359 0 359V359Z" fill="var(--color-two)"/>
+      <path d="M0 240V240C0 173.726 53.7258 120 120 120V120L120 240H0Z" fill="var(--color-three)"/>
+      <path d="M360 120V120C360 186.274 306.274 240 240 240V240L240 120L360 120Z" fill="var(--color-one)"/>
+      <rect x="360" y="239" width="120" height="120" rx="60" transform="rotate(90 360 239)" fill="var(--color-three)"/>
+      <rect x="255" y="254" width="90" height="90" rx="45" fill="var(--color-two)"/>
+      <mask id="mask0_0_93" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="255" y="254" width="90" height="90">
+      <rect x="255" y="254" width="90" height="90" rx="45" fill="white"/>
+      </mask>
+      <g mask="url(#mask0_0_93)">
+      <rect x="127" y="237" width="311" height="175" fill="url(#pattern0)"/>
+      </g>
+      <path d="M360 120V120C426.274 120 480 173.726 480 240V240L360 240L360 120Z" fill="var(--color-two)"/>
+      <path d="M360 120V120C426.274 120 480 66.2742 480 0V0L360 0L360 120Z" fill="var(--color-two)"/>
+      <path d="M480 239V239C480 305.274 426.274 359 360 359V359V239L480 239Z" fill="var(--color-one)"/>
+      <defs>
+      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_0_93" transform="scale(0.00160772 0.00285714)"/>
+      </pattern>
+      </defs>
+      </svg>
+    </section>
+  </main>
+
+  <footer class="relative container max-w-6xl mx-auto p-8">
+    <div class="flex items-start justify-between">
+      <div class="w-1/2">
+        <a href="./index.html" class="hover-none">
+          <img src="./assets/media/logo.svg" class="h-7">
+        </a>
+        <p class="mt-4 w-1/2">
+          Was it simply luck that had caused her to turn down this street.
+        </p>
+      </div>
+
+      <div class="w-1/2 flex flex-col justify-between items-end">
+        <ul class="inline-flex flex-col md:flex-row items-end md:items-center space-y-5 md:space-y-0 md:space-x-10 mt-8">
+          <li>
+            <a onclick="scrollToTop()">Go to top</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="inline-flex items-center">
+              <span>Blog</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 ml-1 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html" class="selected">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-16 flex flex-col md:flex-row items-start md:items-center md:justify-between">
+      <p class="text-sm md:w-1/3">
+        Follow us on twitter: <a href="#" target="_blank">https://twitter.com/username</a>
+      </p>
+      <p class="md:w-1/3 text-sm text-left md:text-right mt-2 md:mt-0">
+        Design from <a href="https://dribbble.com/Rudrisha" target="_blank">Rudrisha Studion</a>; Code by <a href="https://github.com/rohanharikr" target="_blank">rohanharikr</a>.
+      </p>
+    </div>
+   
+    <svg class="hidden md:block h-44 absolute left-1/2 -bottom-9" style="transform: translateX(-50%);" viewBox="0 0 277 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M120 103L120 223C53.7258 223 0 169.274 0 103L120 103Z" fill="var(--color-two)"/>
+    <path d="M119 103C185.274 103 239 156.726 239 223L119 223L119 103Z" fill="var(--color-two)"/>
+    <path d="M191.959 85.1533L107.106 170.006C60.2433 123.143 60.2433 47.1634 107.106 0.300508L191.959 85.1533Z" fill="var(--color-one)"/>
+    <path d="M191.252 84.4463C238.115 131.309 238.115 207.289 191.252 254.152L106.399 169.299L191.252 84.4463Z" fill="var(--color-one)"/>
+    </svg>
+  </footer>
+  <script src="./assets/js/util.js" defer></script>
+</body>
+</html>
